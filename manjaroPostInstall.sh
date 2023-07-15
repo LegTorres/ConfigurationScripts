@@ -50,4 +50,4 @@ echo -e "AGREGANDO neofetch A LOS ARCHIVOS '.zsh' y '.bashrc'"
 echo "neofetch" >> $HOME/.bashrc
 echo "neofetch" >> $HOME/.zshrc
 
-echo -e "\n\nListo!!!\n"
+echo -e "\n\nListo, configuracion terminada!!!\n"
