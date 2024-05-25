@@ -8,7 +8,7 @@ echo -e "\n\nACTUALIZANDO EL SISTEMA\n\n"
 sudo pacman -Syyu --noconfirm
 
 echo -e "\n\nINSTALANDO APLICACIONES DE USO GENERAL\n\n"
-sudo pacman -S vim yt-dlp tilix handbrake audacity picard easytag gimp inkscape kdenlive krita calibre sigil strawberry brave-browser neofetch btop papirus-icon-theme klavaro --noconfirm
+sudo pacman -S vim yt-dlp tilix handbrake audacity picard easytag gimp inkscape kdenlive krita calibre sigil strawberry brave-browser fastfetch btop papirus-icon-theme klavaro --noconfirm
 
 echo -e "\n\nINSTALANDO APLICACIONES DESDE EL REPOSITORIO AUR\n\n"
 pamac install google-chrome sublime-text-4 microsoft-edge-stable-bin visual-studio-code-bin #--noconfirm
@@ -47,7 +47,7 @@ echo -e "\n\nCONFIGURANDO ARCHIVO '.vimrc'\n\n"
 echo -e "set number\nsyntax on\nset ts=4\nset background=dark\nset autoindent" >> .vimrc
 
 echo -e "AGREGANDO neofetch A LOS ARCHIVOS '.zsh' y '.bashrc'"
-echo "neofetch" >> $HOME/.bashrc
-echo "neofetch" >> $HOME/.zshrc
+echo "fastfetch" >> $HOME/.bashrc
+echo "fastfetch" >> $HOME/.zshrc
 
 echo -e "\n\nListo, configuracion terminada!!!\n"
