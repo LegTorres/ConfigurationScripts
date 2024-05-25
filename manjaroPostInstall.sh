@@ -8,7 +8,7 @@ echo -e "\n\nACTUALIZANDO EL SISTEMA\n\n"
 sudo pacman -Syyu --noconfirm
 
 echo -e "\n\nINSTALANDO APLICACIONES DE USO GENERAL\n\n"
-sudo pacman -S vim yt-dlp tilix handbrake audacity picard easytag gimp inkscape kdenlive krita calibre sigil clementine brave-browser neofetch btop papirus-icon-theme klavaro --noconfirm
+sudo pacman -S vim yt-dlp tilix handbrake audacity picard easytag gimp inkscape kdenlive krita calibre sigil strawberry brave-browser neofetch btop papirus-icon-theme klavaro --noconfirm
 
 echo -e "\n\nINSTALANDO APLICACIONES DESDE EL REPOSITORIO AUR\n\n"
 pamac install google-chrome sublime-text-4 microsoft-edge-stable-bin visual-studio-code-bin #--noconfirm
