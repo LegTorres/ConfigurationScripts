@@ -3,10 +3,13 @@
 echo -e "--------------------------------------------------\n| CONFIGURACION POST INSTALACION DE FEDORA LINUX |\n--------------------------------------------------\n"
 
 echo -e "\n\nACTUALIZANDO EL SISTEMA\n\n"
-sudo dnf update --noconfirm
+sudo dnf -y update
 
 echo -e "\n\nINSTALANDO APLICACIONES DE USO GENERAL\n\n"
 sudo dnf install zsh vim yt-dlp tilix handbrake audacity picard easytag gimp inkscape kdenlive krita calibre sigil strawberry brave-browser fastfetch btop papirus-icon-theme klavaro --noconfirm
+
+echo -e "\n\nINSTALANDO APLICACIONES DE USO GENERAL\n\n"
+sudo dnf -y groupinstall "Development Tools" && sudo dnf -y groupinstall "Development Libraries"
 
 echo -e "\n\nCONFIGURANDO GIT\nEstableciendo en nombre de la rama principal a main"
 git config --global init.defaultBranch main
